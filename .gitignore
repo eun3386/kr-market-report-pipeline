@@ -1,0 +1,33 @@
+# 개인 API 키/환경변수
+*.env
+
+# 개인 투자 설정·생성 리포트 (보유 종목·평단가·매매 신호가 들어 있어 공개 저장소에 올리지 않는다)
+portfolio_config.md
+finance_data/reports/
+
+# 자동 생성되는 임시 데이터 (매일 갱신됨, 버전관리 불필요)
+finance_data/market_data.json
+finance_data/global_data.json
+finance_data/.publication.lock
+finance_data/kr_stocks.json
+finance_data/scraped_data.json
+finance_data/program_data.json
+finance_data/sectors.json
+finance_data/watchlist_tracking.json
+finance_data/breakout_history.pkl
+finance_data/breakout_log.json
+finance_data/breakout_log_1510.json
+
+# 로그
+finance_data/run_log*.txt
+finance_data/launchd_std*.log
+finance_data/launchd_premarket_std*.log
+finance_data/launchd_closing_std*.log
+
+# 파이썬 가상환경/캐시
+finance_data/venv/
+**/__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
